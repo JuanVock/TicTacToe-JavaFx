@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="lblWin" prefHeight="278.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.java.fx.TicTacToeJavaFX.WinController">
+   <children>
+      <ImageView fitHeight="329.0" fitWidth="460.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@frohes-neues-jahr-karte-mit-goldenen-konfetti-ueber-schwarzem-hintergrund_1182-1297.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="47.0">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="110.0" prefHeight="70.0" prefWidth="401.0" text="Spieler X hat gewonnen!" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font></Label>
+      <Button fx:id="btnJa" layoutX="175.0" layoutY="228.0" mnemonicParsing="false" onAction="#buttonPressed" text="Ja" />
+      <Button fx:id="btnNein" layoutX="217.0" layoutY="228.0" mnemonicParsing="false" onAction="#buttonPressed" text="Nein" />
+      <Label layoutX="119.0" layoutY="205.0" text="Möchten Sie noch eine Runde spielen?" textFill="WHITE" />
+   </children>
+</AnchorPane>
